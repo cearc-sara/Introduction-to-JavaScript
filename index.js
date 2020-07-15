@@ -125,14 +125,19 @@ console.log(compare(userChoice,computerChoice));
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
+function mi(km){
 
-
-mi=km*0.62137
-
+return km * 0.62137;
+}
+console.log(mi(3));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
+  function cm(ft){
+
+      return ft / 0.032808;
+  }
   
-cm=ft/0.032808
+console.log(cm(3));
 
 
 

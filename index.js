@@ -153,7 +153,7 @@ console.log(cm(3));
     }
   }
 
-
+annoyingSong(6);
 
 
 /************************************************************** Task 7 **************************************************************/
@@ -164,9 +164,21 @@ console.log(cm(3));
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
+  function grade(mark){
+      if(mark >= 90){
+          return "A";
+      }else if(mark >= 80){
+          return "B";
+      }else if(mark >= 70){
+          return "C";
+      }else if(mark >= 60){
+          return "D";
+      }else{
+          return "F";
+      }
+  }
 
-  
+  console.log(grade(62));
   
 
 /************************************************************** Stretch **************************************************************/

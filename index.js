@@ -109,13 +109,14 @@ else{
 let compare = function(choice1,choice2){
     if(choice1 === choice2){
         return "Tie Match!";
-    }else if(choice1 === "rock" && choice2 === "scissors"){
+    }else if(choice1 === "rock" && choice2 === "scissors" || choice1 === "scissors" && choice2 === "rock"){
             return "Rock wins!";
-    }else if(choice1 === "rock" && choice2 === "paper"){
+    }else if(choice1 === "rock" && choice2 === "paper" || choice1 === "paper" && choice2 === "rock"){
         return "Paper wins!";
-    }else if(choice1 === "scissors" && choice2 === "paper"){
+    }else if(choice1 === "scissors" && choice2 === "paper" || choice1 === "paper" && choice2 === "scissors"){
         return "Scissors wins!";
     }
+}
   
 console.log(compare(userChoice,computerChoice));
   
